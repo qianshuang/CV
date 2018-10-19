@@ -4,7 +4,7 @@
 # from PIL import Image
 # import numpy as np
 # import matplotlib.pyplot as plt
-# from scipy import misc
+from scipy import misc
 
 # 读入图片：默认为彩色图（cv2.IMREAD_COLOR），灰度图（cv2.IMREAD_GRAYSCALE）
 # img_array = cv2.imread('data/test.png', cv2.IMREAD_GRAYSCALE)
@@ -73,15 +73,15 @@
 # # ]]]
 # print(image)
 
-# im = misc.imread('data/test.png')  # plt.imread读入后就是一个矩阵
-# # [[[ 73  75  95 255]
-# #   [ 54  57  84 255]
-# #   [ 54  57  84 255]
-# #   ...
-# # ]]]
-# print(im)
-# print(im.dtype)  # uint8
-# print(im.size)  # 4001920
-# print(im.shape)  # (740, 1352, 4)
-# misc.imsave('data/test0_1.png', im)  # 图像存储
+im = misc.imread('data/test.png')  # plt.imread读入后就是一个矩阵
+# [[[ 73  75  95 255]
+#   [ 54  57  84 255]
+#   [ 54  57  84 255]
+#   ...
+# ]]]
+print(im)
+print(im.dtype)  # uint8
+print(im.size)  # 4001920
+print(im.shape)  # (740, 1352, 4)
+misc.imsave('data/test0_1.png', im)  # 图像存储
 
